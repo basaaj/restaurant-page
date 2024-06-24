@@ -7,11 +7,16 @@ export function loadAbout() {
     aboutDiv.setAttribute('id', 'aboutDiv');
 
     const imgDiv = document.createElement('div');
+    imgDiv.setAttribute('class', 'imgWithCred');
     const aboutImg = document.createElement('img');
     aboutImg.setAttribute('src', img);
     aboutImg.setAttribute('id', 'aboutImg');
+    imgDiv.appendChild(aboutImg);
 
-    aboutDiv.appendChild(aboutImg);
+    const cred = document.createElement('p');
+    cred.innerHTML = `Photo by <a href="https://unsplash.com/@heftiba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Toa Heftiba</a> on <a href="https://unsplash.com/photos/green-leafed-plant-near-table-QnUywvDdI1o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>`;
+    imgDiv.appendChild(cred);
+    aboutDiv.appendChild(imgDiv);
 
     const headline = document.createElement('h1');
     headline.innerText = 'Our Story';

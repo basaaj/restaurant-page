@@ -91,7 +91,12 @@ h3 {
     text-align: center;
     color: var(--light-brown);
     margin: -10px 0;
+    margin-bottom: 8px;
     font-family: 'SundayBloom', sans-serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #aboutDiv {
@@ -107,12 +112,16 @@ h3 {
 #aboutImg {
     width: 300px;
     height: fit-content;
+}
+
+.imgWithCred {
     grid-area: image;
+    text-align: center;
 }
 
 .headline {
     grid-area: headline;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
 }
 
 .aboutText {
@@ -126,4 +135,9 @@ h3 {
 .location {
     grid-area: location;
     text-align: left;
+}
+
+a {
+    color: var(--dark-brown);
+    text-decoration: none;
 }
