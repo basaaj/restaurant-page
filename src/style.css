@@ -49,11 +49,14 @@ header {
     margin-bottom: 10px;
 }
 
-#homeImg {
-    height: fit-content;
-    width: 60%;
+img {
     border-radius: 20px;
     border: 2px solid var(--gray);
+}
+
+#homeImg {
+    height: fit-content;
+    width: 60%;   
 }
 
 nav {
@@ -87,6 +90,40 @@ h3 {
     font-size: 24px;
     text-align: center;
     color: var(--light-brown);
-    margin-top: -20px;
+    margin: -10px 0;
     font-family: 'SundayBloom', sans-serif;
+}
+
+#aboutDiv {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        'headline headline .'
+        'text text image'
+        'location hours .';
+}
+
+#aboutImg {
+    width: 300px;
+    height: fit-content;
+    grid-area: image;
+}
+
+.headline {
+    grid-area: headline;
+    margin-bottom: 0px;
+}
+
+.aboutText {
+    grid-area: text;
+}
+
+.hours {
+    grid-area: hours;
+}
+
+.location {
+    grid-area: location;
+    text-align: left;
 }
