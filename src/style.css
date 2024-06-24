@@ -5,54 +5,59 @@
     --gray: rgb(237, 232, 230);
 }
 
+@font-face {
+    font-family: 'SundayBloom';
+    src: url('./font/SundayBloom.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
     background-color: var(--gray);
+    align-items: center;
 }
 
-body div {
-    width: 90%;
+body > * {
+    width: 60%;
 }
 
 #content {
     background-color: var(--brown-gray);
     padding: 20px 30px;
-    height: 75%;
-    border-radius: 20px 0 20px 20px;
+    height: 80%;
+    border-radius: 0 20px 20px 20px;
     border: 5px solid var(--dark-brown);
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
     justify-content: space-between;
     align-items: end;
-    width: 95%;
     display: flex;
+    margin-left: -70px;
 }
 
 #name {
     margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.headline {
-    display: grid;
-    grid-template-columns: minmax(325px, 3fr) 1fr;
-}
-
-.headline div {
-    width: 500px;
 }
 
 #homeImg {
-    height: 600px;
-    width: 450px;
-    margin: 20px;
+    height: fit-content;
+    width: 60%;
     border-radius: 20px;
     border: 2px solid var(--gray);
+}
+
+nav {
+    display: flex;
 }
 
 button {
@@ -69,4 +74,19 @@ button {
 
 .active {
     background-color: var(--brown-gray);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--dark-brown);
+    font-family: 'SundayBloom', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    color: var(--light-brown);
+    margin-top: -20px;
+    font-family: 'SundayBloom', sans-serif;
 }
