@@ -141,3 +141,28 @@ a {
     color: var(--dark-brown);
     text-decoration: none;
 }
+
+#menuDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    overflow: auto;
+}
+
+.menuItem {
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem img {
+    width: 80%;
+    height: fit-content;
+}
+
+.menuItem h3 {
+    margin: 20px auto;
+}
