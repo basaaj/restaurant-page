@@ -39,19 +39,15 @@ body > * {
 }
 
 header {
-    justify-content: space-between;
     align-items: end;
     display: flex;
     margin-left: -70px;
 }
 
-#name {
-    margin-bottom: 10px;
-}
-
 img {
     border-radius: 20px;
     border: 2px solid var(--gray);
+    box-shadow: 5px 5px var(--light-brown);
 }
 
 #homeImg {
@@ -67,6 +63,7 @@ button {
     height: 50px;
     width: 150px;
     font-size: larger;
+    font-weight: bold;
     border-radius: 10px 10px 0 0;
     background-color: var(--gray);
     color: var(--dark-brown);
@@ -100,7 +97,6 @@ p {
 }
 
 #aboutDiv {
-    width: 100%;
     display: grid;
     gap: 20px;
     grid-template-areas:
@@ -134,7 +130,6 @@ p {
 
 .location {
     grid-area: location;
-    text-align: left;
 }
 
 a {
@@ -146,7 +141,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    overflow: auto;
 }
 
 .menuItem {
